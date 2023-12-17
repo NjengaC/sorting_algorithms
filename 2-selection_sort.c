@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap - swaps two array ints positions
+ * sswap - swaps two array ints positions
  * @left: int on the sorted portion
  * @right: int at unsorted portion
  * Return: nothing
