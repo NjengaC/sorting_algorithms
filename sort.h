@@ -2,6 +2,8 @@
 #define LIST_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -24,5 +26,5 @@ void quick_sort(int *array, size_t size);
 void swap(int *large, int *small);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
-
+void sswap(int *left, int *right);
 #endif
