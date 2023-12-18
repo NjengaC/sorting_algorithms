@@ -17,7 +17,7 @@ void swap(int *large, int *small)
 }
 
 /**
- * bubble_sort - sorts an array of ints in ascending order
+ * bubble_sort - sorts an array of ints in an ascending  order
  * @array: array of ints
  * @size: size of the array
  * Return: nothing

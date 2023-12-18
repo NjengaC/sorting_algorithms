@@ -2,7 +2,7 @@
 
 /**
  * sswap - swaps two array ints positions
- * @left: int on the sorted portion
+ * @left: int at  sorted portion
  * @right: int at unsorted portion
  * Return: nothing
  */
