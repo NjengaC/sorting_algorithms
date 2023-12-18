@@ -65,7 +65,7 @@ int partition(int *array, size_t low, size_t high, size_t size)
  * @low: start point
  * @high: last element
  * @size: array size
- * Return: nothing
+ * Return: nothing.
  */
 
 void quickSort(int *array, size_t low, size_t high, size_t size)
