@@ -47,4 +47,12 @@ void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void countsort(int *array, size_t size, int pos);
+
+int lomuto_partition(int *array, int low, int high, size_t size);
+void lomuto_quicksort(int *array, int low, int high, size_t size);
+void quick_sort1(int *array, size_t size);
+void print_array_(const int *array, size_t size);
+int get_max(int *array, int size);
+void radix_counting_sort(int *array, size_t size, int sig, int *buff);
+
 #endif
