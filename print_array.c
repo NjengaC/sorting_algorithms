@@ -21,3 +21,17 @@ void print_array(const int *array, size_t size)
 	}
 	printf("\n");
 }
+/**
+ *  * sswap - swaps two array ints positions
+ *   * @left: int at  sorted portion
+ *    * @right: int at unsorted portion
+ *     * Return: nothing
+ *      */
+void Swap(int *left, int *right)
+{
+	int temp;
+
+	temp = *left;
+	*left = *right;
+	*right = temp;
+}

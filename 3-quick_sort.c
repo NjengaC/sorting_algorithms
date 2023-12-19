@@ -12,8 +12,8 @@ int partition(int *array, int low, int high, size_t size)
 {
 	int pivot = array[low];
 	int i = low - 1;
-	int j = high + 1, temp;
-	size_t k;
+	int j = high + 1;
+
 
 	while (1)
 	{
@@ -27,18 +27,8 @@ int partition(int *array, int low, int high, size_t size)
 		if (i >= j)
 			return (j);
 
-
-		temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
-
-		for (k = 0; k < size; k++)
-		{
-			if (k != 0)
-				printf(", ");
-			printf("%d", array[k]);
-		}
-		printf("\n");
+		Swap(&array[i], &array[j]);
+		print_array(array, size);
 	}
 }
 
