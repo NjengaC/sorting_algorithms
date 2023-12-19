@@ -37,7 +37,7 @@ void countsort(int *array, size_t size, int pos)
 	size_t i;
 	int *temp, j;
 
-	temp = malloc(sizeof(size));
+	temp = malloc(sizeof(int) * size);
 
 	for (i = 0; i < size; i++)
 	{
