@@ -34,5 +34,7 @@ void shell_sort(int *array, size_t size);
 void insert(int *array, size_t size);
 void cocktail_sort_list(listint_t **Head);
 void list_swap(listint_t **node, listint_t **head);
+void shellsort(int *array, size_t size);
+void counting_sort(int *array, size_t size);
 
 #endif
