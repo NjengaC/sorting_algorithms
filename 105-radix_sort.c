@@ -33,7 +33,7 @@ void radix_sort(int *array, size_t size)
 
 void countsort(int *array, size_t size, int pos)
 {
-	int count[10] = {0};
+	int count[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	size_t i;
 	int *temp, j;
 
@@ -49,7 +49,8 @@ void countsort(int *array, size_t size, int pos)
 	}
 	for (j = (int)size - 1; j >= 0; j--)
 	{
-		temp[--count[(array[j] / pos) % 10]] = array[j];
+		temp[count[(array[j] / pos) % 10] - 1] = array[j];
+		count[(array[j] / pos) % 10] -= 1;
 	}
 	for (i = 0; i < size; i++)
 		array[i] = temp[i];
