@@ -36,7 +36,6 @@ void counting_sort(int *array, size_t size)
 	/* Count occurrences of each element */
 	for (ii = 0; ii < size; ii++)
 		count[array[ii]] += 1;
-
 	for (i = 0; i < (max + 1); i++)
 		count[i] += count[i - 1];
 	print_array(count, max + 1);
