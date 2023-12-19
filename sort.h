@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-
+#include <limits.h>
 /**
  * struct listint_s - Doubly linked list node
  *
