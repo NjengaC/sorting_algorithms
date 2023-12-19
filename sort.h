@@ -31,7 +31,7 @@ void quickSort(int *array, size_t low, size_t high, size_t size);
 int partition(int *array, int low, int high, size_t size);
 void Swap(int *a, int *b);
 void shell_sort(int *array, size_t size);
-void insertionsort(int arr[], size_t n);
+void insert(int *array, size_t size);
 void cocktail_sort_list(listint_t **Head);
 void list_swap(listint_t **node, listint_t **head);
 

@@ -11,16 +11,16 @@ int main(void)
 {
 	int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
 	size_t n = sizeof(array) / sizeof(array[0]);
-	int arr[100];
-	int i, nn;
+/*	int arr[100];
+	int i, nn;*/
 
 	print_array(array, n);
 	printf("\n");
-	selection_sort(array, n);
+	insert(array, n);
 	printf("\n");
 	print_array(array, n);
 	printf("\n");
-
+/*
 	srand(time(NULL));
 	for (i = 0; i < 100; i++)
 	{
@@ -37,7 +37,7 @@ int main(void)
 	printf("\n");
 	printf("\n");
 	print_array(arr, nn);
-
+*/
 	return (0);
 
 }
