@@ -41,5 +41,10 @@ void merge_sort(int *array, size_t size);
 void sort(int *array, int l_min, int l_max, int r_min, int r_max, int *tmp);
 void paste(int *src, int *dest, size_t n);
 void divide_conquer(int *array, int *tmp, int min, int max, size_t n);
-
+void _swap(int *a, int *b);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+void countsort(int *array, size_t size, int pos);
 #endif
