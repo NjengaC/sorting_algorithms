@@ -11,24 +11,26 @@
 int partition(int *array, int low, int high, size_t size)
 {
 
-	int pivot = array[high];
+	int pivot = array[low];
 	int i = low - 1;
-	int j;
+	int j = high + 1;
 
-	for (j = low; j <= high - 1; j++)
+	while (1)
 	{
-		if (array[j] <= pivot)
-		{
+		do {
 			i++;
-			Swap(&array[i], &array[j]);
-			print_array(array, size);
-		}
+		} while (array[i] < pivot);
+		do {
+			j--;
+		} while (array[j] > pivot);
+
+		if (i >= j)
+			return (j);
+
+
+		Swap(&array[i], &array[j]);
+		print_array(array, size);
 	}
-
-	Swap(&array[i + 1], &array[high]);
-	print_array(array, size);
-
-	return i + 1;
 }
 
 
@@ -46,7 +48,7 @@ void quicksort(int *array, int low, int high, size_t size)
 	{
 		int pivot = partition(array, low, high, size);
 
-		quicksort(array, low, pivot - 1, size);
+		quicksort(array, low, pivot, size);
 		quicksort(array, pivot + 1, high, size);
 	}
 }
