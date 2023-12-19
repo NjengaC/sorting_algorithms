@@ -1,19 +1,19 @@
 #include "sort.h"
 
 /**
- * partition - partitions an array of integers using Lomuto partiton scheme
- * @array: The array
- * @low: lower index of the partition
- * @high: higher end index
- * @size: size of array
- * Return: pivot index.
+ * partition - Partitions an array using lomuto schem
+ * @array: The array to partition.
+ * @low: The low index of the partition.
+ * @high: The high index of the partition.
+ * @size: The size of the array.
+ * Return: The pivot index.
  */
 int partition(int *array, int low, int high, size_t size)
 {
-
 	int pivot = array[low];
 	int i = low - 1;
-	int j = high + 1;
+	int j = high + 1, temp;
+	size_t k;
 
 	while (1)
 	{
@@ -28,19 +28,26 @@ int partition(int *array, int low, int high, size_t size)
 			return (j);
 
 
-		Swap(&array[i], &array[j]);
-		print_array(array, size);
+		temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+
+		for (k = 0; k < size; k++)
+		{
+			if (k != 0)
+				printf(", ");
+			printf("%d", array[k]);
+		}
+		printf("\n");
 	}
 }
 
-
 /**
- * quicksort - sorts an array using the quicksort algorithm.
- * @array: array
- * @low: low index
- * @high: high index
- * @size: size of the array
- * Return: nothing
+ * quicksort - Sorts an array using the quicksort algorithm.
+ * @array: The array to sort.
+ * @low: The low index of the array.
+ * @high: The high index of the array.
+ * @size: The size of the array.
  */
 void quicksort(int *array, int low, int high, size_t size)
 {
@@ -54,9 +61,9 @@ void quicksort(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort - main function calling
- * @array: the array
- * @size: size of array
+ * quick_sort - Initiates the quicksort algorithm.
+ * @array: The array to sort.
+ * @size: The size of the array.
  */
 void quick_sort(int *array, size_t size)
 {
