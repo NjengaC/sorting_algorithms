@@ -46,14 +46,14 @@ void cocktail_sort_list(listint_t **Head)
 		return;
 
 	head = new = *Head, start = end = 0, traverser = 1;
-	while (true)
+	while (1)
 	{
 		start++;
 		while (head->next && traverser != end)
 		{
 			if (head->n > head->next->n)
 			{
-				copy = head, dll_swap(&copy, Head);
+				copy = head, list_swap(&copy, Head);
 				head = copy, print_list(*Head);
 			}
 			traverser++;
@@ -68,7 +68,7 @@ void cocktail_sort_list(listint_t **Head)
 		{
 			if (head->prev->n > head->n)
 			{
-				copy = head->prev, dll_swap(&copy, Head);
+				copy = head->prev, list_swap(&copy, Head);
 				head = copy->next, print_list(*Head);
 			}
 			traverser--;
