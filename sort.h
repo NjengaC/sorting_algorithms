@@ -52,5 +52,5 @@ void _quick_sort(int *array, int low, int high, int size);
 void quick_sort_hoare(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void heap_tree(int *array, size_t n, size_t size, size_t index);
-
+void heap_tree(int *array, size_t size, size_t base, size_t root);
 #endif
