@@ -1,8 +1,8 @@
 #include "sort.h"
 /**
  * radix_sort - sorts an array using radix sort
- * @array: array
- * @size: size
+ * @array: the array
+ * @size: size of array
  * Return: nothing
  */
 
@@ -25,7 +25,7 @@ void radix_sort(int *array, size_t size)
 }
 /**
  * countsort - sorts using the standard counting sort
- * @array: array
+ * @array:  the array
  * @size: size of array
  * @pos: current position
  * Return: nothing
