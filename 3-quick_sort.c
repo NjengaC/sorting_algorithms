@@ -61,7 +61,7 @@ void quicksort(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort - Initiates the quicksort algorithm.
+ * quick_sort - Initiate the quicksort algorithm.
  * @array: The array to sort.
  * @size: The size of the array.
  */
