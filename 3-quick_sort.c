@@ -1,6 +1,20 @@
 #include "sort.h"
 
 /**
+ * sSwap - swaps two array ints positions
+ * @left: int at  sorted portion
+ * @right: int at unsorted portion
+ * Return: nothing
+ */
+void sSwap(int *left, int *right)
+{
+	int temp;
+
+	temp = *left;
+	*left = *right;
+	*right = temp;
+}
+/**
  * partition - Order a subset of an array of integers according to
  *                    the lomuto partition scheme (last element as pivot).
  * @array: The array of integers.
@@ -21,7 +35,7 @@ int partition(int *array, size_t size, int left, int right)
 		{
 			if (above < below)
 			{
-				Swap(array + below, array + above);
+				sSwap(array + below, array + above);
 				print_array(array, size);
 			}
 			above++;
@@ -30,7 +44,7 @@ int partition(int *array, size_t size, int left, int right)
 
 	if (array[above] > *pivot)
 	{
-		Swap(array + above, pivot);
+		sSwap(array + above, pivot);
 		print_array(array, size);
 	}
 
@@ -38,7 +52,7 @@ int partition(int *array, size_t size, int left, int right)
 }
 
 /**
- * _sort - Implement the quicksort algorithm through recursion.
+ * quik_sort - Implement the quicksort algorithm through recursion.
  * @array: An array of integers to sort.
  * @size: The size of the array.
  * @left: The starting index of the array partition to order.
@@ -46,15 +60,15 @@ int partition(int *array, size_t size, int left, int right)
  *
  * Return: nothing
  */
-void _sort(int *array, size_t size, int left, int right)
+void quik_sort(int *array, size_t size, int left, int right)
 {
 	int part;
 
 	if (right - left > 0)
 	{
 		part = partition(array, size, left, right);
-		_sort(array, size, left, part - 1);
-		_sort(array, size, part + 1, right);
+		quik_sort(array, size, left, part - 1);
+		quik_sort(array, size, part + 1, right);
 	}
 }
 
@@ -73,5 +87,5 @@ void quick_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	_sort(array, size, 0, size - 1);
+	quik_sort(array, size, 0, size - 1);
 }

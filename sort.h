@@ -49,6 +49,7 @@ void quick_sort_hoare(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void heap_tree(int *array, size_t n, size_t size, size_t index);
 int partition(int *array, size_t size, int left, int right);
-void _sort(int *array, size_t size, int left, int right);
+void quik_sort(int *array, size_t size, int left, int right);
+void sSwap(int *a, int *b);
 
 #endif
