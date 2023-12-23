@@ -1,7 +1,8 @@
 #include "sort.h"
 
 /**
- * heap_tree - performs a sift-down operation in order to maintain the heap property
+ * heap_tree - performs a sift-down operation in order to maintain the heap
+ * property
  * @array: array
  * @n: size of the array
  * @size: size of the heap
