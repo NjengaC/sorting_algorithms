@@ -3,7 +3,7 @@
 /**
  * swap - swaps the order of ints in an array
  * @large: large int
- * @small: smaller int
+ * @small: small int
  * Return: nothing
  */
 
