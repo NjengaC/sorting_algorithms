@@ -9,10 +9,12 @@
 void radix_sort(int *array, size_t size)
 {
 	size_t i, pos;
-	int max = array[0];
+	int max;
 
-	if (!array || size == 0 || size == 1)
+	if (array == NULL || size < 2)
 		return;
+
+	max = array[0];
 
 	for (i = 0; i < size; i++)
 	{
@@ -39,6 +41,9 @@ void countsort(int *array, size_t size, int pos)
 	int count[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	size_t i;
 	int *temp, j;
+
+	if (array == NULL || size == 0 || size == 1)
+		return;
 
 	temp = malloc(sizeof(int) * size);
 
