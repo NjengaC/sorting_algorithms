@@ -2,7 +2,7 @@
 /**
  * radix_sort - sorts an array using radix sort
  * @array: the array
- * @size: size of array
+ * @size: size of the array
  * Return: nothing
  */
 
