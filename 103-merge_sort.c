@@ -87,7 +87,7 @@ void sort(int *array, int l_min, int l_max, int r_min, int r_max, int *tmp)
 }
 
 /**
- *merge_sort - performs the merge sort
+ *merge_sort - perform the merge sort
  *@array: the input array
  *@size: the size of the array
  *Return: nothing
