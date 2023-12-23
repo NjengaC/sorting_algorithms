@@ -59,14 +59,11 @@ void _sort(int *array, size_t size, int left, int right)
 }
 
 /**
-<<<<<<< HEAD
  * quick_sort - Sort an array of integers in ascending
  *              order using the quicksort algorithm.
  * @array: An array of integers.
-=======
  * quick_sort - Initiate the quicksort algorithm.
  * @array: The array to sort.
->>>>>>> abd14327a1c5129ed819a3bce9e2d6cdc0241b86
  * @size: The size of the array.
  *
  * Description: Uses the Lomuto partition scheme. Prints
