@@ -44,7 +44,7 @@ int partition(int *array, size_t size, int left, int right)
  * @left: The starting index of the array partition to order.
  * @right: The ending index of the array partition to order.
  *
- * Description: Uses the Lomuto partition scheme.
+ * Return: nothing
  */
 void _sort(int *array, size_t size, int left, int right)
 {
@@ -66,8 +66,7 @@ void _sort(int *array, size_t size, int left, int right)
  * @array: The array to sort.
  * @size: The size of the array.
  *
- * Description: Uses the Lomuto partition scheme. Prints
- *              the array after each swap of two elements.
+ * Return: Uses the Lomuto partition scheme
  */
 void quick_sort(int *array, size_t size)
 {
