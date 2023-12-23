@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * radix_sort - sorts an array using radix sort
+ * radix_sort - sorts an by array  radix sort
  * @array: the array
  * @size: size of the array
  * Return: nothing
