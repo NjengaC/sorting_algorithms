@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * _partition - partitions using Hoare's scheme
- * @array: array
+ * @array: the array
  * @low: low end index
  * @high: high end index
  * @size: size of the array
@@ -35,7 +35,7 @@ int _partition(int *array, int low, int high, int size)
 
 /**
  * _quick_sort - quicksort
- * @array: array
+ * @array: the array
  * @low: low
  * @high: high
  * @size: size of the array

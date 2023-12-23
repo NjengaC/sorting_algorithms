@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * list_swap - swaps a node and node next of a linked list
- * @node: node toswap
+ * @node: node to swap
  * @head: head of list
  * Return: nothing
  */

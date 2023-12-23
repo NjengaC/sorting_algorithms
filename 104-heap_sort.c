@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * heap_tree - performs a sift-down operation to maintain the heap property
+ * heap_tree - performs a sift-down operation in order to maintain the heap property
  * @array: array
  * @n: size of the array
  * @size: size of the heap
@@ -37,7 +37,7 @@ void heap_tree(int *array, size_t n, size_t size, size_t index)
 
 /**
  * heap_sort - sorts an array of integers using the Heap Sort algorithm
- * @array: array
+ * @array: the array
  * @size: size of the array
  */
 void heap_sort(int *array, size_t size)

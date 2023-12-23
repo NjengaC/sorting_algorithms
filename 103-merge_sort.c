@@ -18,7 +18,7 @@ void paste(int *src, int *dest, size_t n)
 }
 
 /**
- *divide_conquer - a function to perform the divide conquer of mergesort
+ *divide_conquer - a function that performs the divide conquer of mergesort
  *@array: the array input
  *@tmp: the copy of the array
  *@min: the minimum of the array
@@ -87,7 +87,7 @@ void sort(int *array, int l_min, int l_max, int r_min, int r_max, int *tmp)
 }
 
 /**
- *merge_sort - performs the merge sort
+ *merge_sort - perform the merge sort
  *@array: the input array
  *@size: the size of the array
  *Return: nothing
