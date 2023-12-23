@@ -45,7 +45,7 @@ void bit_merge(int *array, size_t size, size_t start, size_t seq,
 
 /**
  * bitonic_seq - Converts an array of integers into a bitonic sequence.
- * @array: An array of integers.
+ * @array: Array of integers.
  * @size: The size of the array.
  * @start: The starting index of a block of the building bitonic sequence.
  * @seq: The size of a block of the building bitonic sequence.
